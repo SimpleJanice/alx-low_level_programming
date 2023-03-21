@@ -1,15 +1,15 @@
 #include "main.h"
+
 /**
-* _abs - Computer the absolute valve of an integer.
-*
-* Return: 0 Absolute value of number or zero
+* _abs - computes the absolute value of an integer
+* @n: the int to check
+* Return: the absolute value of int
 */
-int _abs(int c) 
+int _abs(int n)
 {
-if (c < 0)
-{ 
-int abs_val = c * -1;
-return (abs_val);
+if (n >= 0)
+{
+return (n);
 }
-return (0);
+return (-n);
 }
