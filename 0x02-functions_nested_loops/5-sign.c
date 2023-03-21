@@ -4,7 +4,7 @@
 *
 * @n: the int to check
 *
-* Return: 1 for positive n, -1 for negative and  0 for anything 
+* Return: 1 for positive n, -1 for negative and 0 for anything
 */
 int print_sign(int n)
 {
