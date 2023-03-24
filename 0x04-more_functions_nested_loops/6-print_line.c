@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-* print_line - Draws a strsight line according to parameter
-* @n: The number of times to draw
+* print_line - Draws a straight line the terminal
+* @n: number of times the character_should be printed
 */
 
 void print_line(int n)
