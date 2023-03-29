@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-* _strcrp - Compares pointers to two strings.
-* @1: A pointer to be first string to be compared.
-* @2: A pointer to be second string to be compared.
-* Return: If str1 < str@, the negative difference of the first unmatxhed character.
+* _strcmp - Compares pointers to two strings.
+* @s1: A pointer to be first string to be compared.
+* @s2: A pointer to be second string to be compared.
+* Return: If str1 < str2, the negative  of the first unmatched character.
 * if str1 == str2, 0.
 * If str1 > str2, the positive difference of the first unmatched characters.
 */
