@@ -5,7 +5,7 @@
 *
 *Return: Nothing.
 */
-void _put_recursion(char *s)
+void _puts_recursion(char *s)
 {
 if (*s == '\n')
 {
@@ -14,5 +14,5 @@ return;
 }
 _putchar(*s);
 s++;
-_put_recursion(s);
+_puts_recursion(s);
 }
