@@ -1,38 +1,51 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 /**
-* main - program that adds positive numbers.
+* main - Main Entry
 * @argc: input argument count
-* @argv: input argument value
-* Return: 0 (Success)
-*/
+* @argv: input argumentb value
+* Return: Always 0 (success)
+**/
 int main(int argc, char *argv[])
 {
-int s;
-int count;
-int i;
+int cnts, cns = 0;
 
-count = 1;
-s = 0;
-if (argc == 1)
+if (argc == 2)
 {
-printf("0\n");
-return (0);
+cnts = atoi(*(argv + 1));
+while (cnts > 0)
+{
+if (cnts % 25 < cnts)
+{
+cnts -= 25;
+cns++;
 }
-while (count < argc)
+else if (cnts % 10 < cnts)
 {
-for (i = 0; argv[count][i] != '\0'; i++)
+cnts -= 10;
+cns++;
+}
+else if (cnts % 5 < cnts)
 {
-if (!(isdigit(argv[count][i])))
+cnts -= 5;
+cns++;
+}
+else if (cnts % 2 < cnts)
+{
+cnts -= 2;
+cns++;                  }
+else if (cnts % 1 < cnts)
+{
+cnts -= 1;
+cns++;
+}
+}
+}
+else
 {
 printf("Error\n");
 return (1);
 }
-}
-s += atoi(argv[count]);
-count++;
-}
-printf("%d\n", s);
+printf("%d\n", cns);
 return (0);
 }
