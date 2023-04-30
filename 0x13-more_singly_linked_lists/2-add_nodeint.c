@@ -5,17 +5,18 @@
 * @head: Pointer to address of a list
 * @n: Integer
 *
-* Return: Address of new element
-* NULL if failed
+* Return: If the function fails - NULL.
+* otherwise - the address of the new element.
 */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-listint_t *new = malloc(sizeof(listint_t));
+listint_t *new;
+new = malloc(sizeof(listint_t));
 
-if (!new)
+if (new == NULL)
 return (NULL);
 new->n = n;
 new->next = *head;
 *head = new;
-return (*head);
+return (new);
 }
