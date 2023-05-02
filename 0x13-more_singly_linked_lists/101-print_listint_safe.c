@@ -2,7 +2,7 @@
 
 /**
 * print_listint_safe - Function that frees a linked list
-* @h: pointer to the first node in the linked list
+* @head: pointer to the first node in the linked list
 * Return: number of elements in the freed list
 */
 size_t print_listint_safe(const listint_t *head)
@@ -11,6 +11,7 @@ const listint_t *tmp_n = NULL;
 const listint_t *l_n = NULL;
 size_t counter = 0;
 size_t new_n;
+
 tmp_n = head;
 while (tmp_n)
 {
@@ -32,5 +33,5 @@ new_n++;
 if (!head)
 exit(98);
 }
-return (counter);
+return (counter);
 }
