@@ -20,7 +20,7 @@ dlistint_t *head;
 unsigned int i;
 
 new_node = NULL;
-if (idx == 0)	
+if (idx == 0)
 new_node = add_dnodeint(h, n);
 else
 {
